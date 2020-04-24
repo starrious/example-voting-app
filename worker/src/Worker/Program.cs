@@ -109,7 +109,7 @@ namespace Worker
                 try
                 {
                     Console.Error.WriteLine("Connecting to redis");
-                    return ConnectionMultiplexer.Connect(ipAddress + ",password=t0OBw4lRkT8rtdUB");
+                    return ConnectionMultiplexer.Connect(ipAddress + ",password=redis_password");
                 }
                 catch (RedisConnectionException)
                 {
